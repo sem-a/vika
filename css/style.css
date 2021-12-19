@@ -1,0 +1,147 @@
+/**
+    font-family: 'MuseoModerno', cursive;
+    font-family: 'Roboto', sans-serif;
+**/
+.body__container {
+    width: 1040px;
+    margin: 0 auto; 
+    z-index: 2;
+    padding-top: 120px;
+}
+
+
+.page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+.page__screen {
+    background: black;
+}
+.screen {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.page__scroll {
+    display: none;
+}
+.page__pagination {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(0px, -50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.page__bullet {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease 0s;
+}
+.page__bullet_active {
+    background-color: #FFE600;
+}
+/*-----------------------------*/
+.header {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.menu__body {
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.menu__items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu-item {
+    margin-left: 50px;
+}
+.menu-item a{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.menu-item a:hover {
+    color: #FFE600;
+    transition: 0.5s;
+}
+/*--------------------------*/
+
+
+
+
+.main__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main__body_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__social_icon {
+    display: flex;
+    align-items: center;
+}
+.main__social_item {
+    margin-left: 10px;
+}
+.main__title h1 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'MuseoModerno', cursive;
+    color: #FFE600;
+}
+.main__subtitle p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+.main__conditions p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+a.conditions__style {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: #FFE600;
+    text-decoration: underline;
+}
+.main__social_item a {
+    font-size: 24px;
+    color: white;
+}
