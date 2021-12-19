@@ -100,9 +100,6 @@ body {
     right: 0;
     transform: translateY(-50%);
 }
-
-
-
 .main__body_image {
     position: absolute;
     top: 0;
@@ -244,3 +241,43 @@ a.conditions__style {
     left: 0;
 }
 /*----------------------------*/
+
+
+
+
+/* АНИМАЦИЯ */
+.main__title._anim-item {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease 1s;
+}
+.main__title._anim-item._anim-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main__subtitle._anim-item {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 1s ease 1.5s;
+}
+.main__subtitle._anim-item._anim-active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.main__body_conditions._anim-item {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease 2s
+}
+.main__body_conditions._anim-item._anim-active {
+    opacity: 1;
+    transform: translateX(-50%);
+}
+.main__body_image._anim-item {
+    opacity: 0;
+    transition: all 1s ease 0.2s;
+}
+.main__body_image._anim-item._anim-active {
+    opacity: 1;
+}
+/*-----------------*/
