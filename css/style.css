@@ -87,31 +87,26 @@ body {
 }
 /*--------------------------*/
 .main__body {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: 100%;
-    width: 1040px;
-    transform: translateX(-50%);
-}
-.main__body_title {
+    width: 100%;
     position: absolute;
     top: 50%;
-    right: 0;
     transform: translateY(-50%);
+}
+.main__body_container {
+    margin: 0 auto;
+    width: 1040px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .main__body_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
 }
 .main__image {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    width: 100%;
+}
+.main__image img {
+    width: 100%;
 }
 .main__body_conditions {
     width: 1040px;
@@ -171,6 +166,161 @@ a.conditions__style {
 .main__social_item a:hover {
     color: #FFE600;
     transition: 0.5s;
+}
+@media screen and (max-width: 1200px) {
+    .menu__body {
+        width: 800px;
+    }
+    .main__body_container {
+        width: 800px;
+    }
+    .main__body_conditions {
+        width: 800px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .menu__body {
+        width: 700px;
+    }
+    .main__body_container {
+        width: 700px;
+    }
+    .main__body_conditions {
+        width: 700px;
+    }
+    .main__title h1 {
+        font-size: 48px;
+    }
+    .main__subtitle {
+        padding-top: 10px;
+    }
+    .main__subtitle p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .menu__body {
+        width: 500px;
+    }
+    .main__body_container {
+        width: 500px;
+    }
+    .main__body_conditions {
+        width: 500px;
+    }
+    .main__title h1 {
+        font-size: 48px;
+    }
+    .main__subtitle {
+        padding-top: 10px;
+    }
+    .main__subtitle p{
+        font-size: 18px;
+    }
+    .page__pagination {
+        right: 30px;
+    }
+    .page__bullet {
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .menu__body {
+        width: 300px;
+    }
+    .menu__items {
+        justify-content: center;
+    }
+    .menu-item {
+        margin-left: 20px;
+    }
+    .main__body_container {
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main__body_conditions {
+        width: 500px;
+    }
+    .main__title {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .main__title h1 {
+        font-size: 48px;
+    }
+    .main__subtitle {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .main__subtitle p{
+        font-size: 18px;
+    }
+    .main__body_flex {
+        flex-direction: column;
+    }
+    .main__social_icon {
+        padding-top: 20px;
+    }
+    .main__conditions {
+        width: 300px;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 505px) {
+    .menu__body {
+        width: 200px;
+    }
+    .menu__items {
+        justify-content: center;
+    }
+    .menu-item {
+        margin-left: 20px;
+    }
+    .main__body_container {
+        width: 200px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main__body_image {
+        width: 100%;
+    }
+    .main__body_conditions {
+        width: 200px;
+    }
+    .main__title {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .main__title h1 {
+        font-size: 48px;
+    }
+    .main__subtitle {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .main__subtitle p{
+        font-size: 18px;
+    }
+    .main__body_flex {
+        flex-direction: column;
+    }
+    .main__social_icon {
+        padding-top: 20px;
+    }
+    .main__conditions {
+        width: 200px;
+        text-align: center;
+    }
+    .page__pagination {
+        right: 15px;
+    }
+    .page__bullet {
+        width: 7px;
+        height: 7px;
+    }
 }
 /*---------------------------*/
 .condition__container {
@@ -275,9 +425,11 @@ a.conditions__style {
 }
 .main__body_image._anim-item {
     opacity: 0;
+    transform: translate(-2%, 2%);
     transition: all 1s ease 0.2s;
 }
 .main__body_image._anim-item._anim-active {
     opacity: 1;
+    transform: translate(0, 0);
 }
 /*-----------------*/
