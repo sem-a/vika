@@ -200,6 +200,7 @@ a.conditions__style {
 }
 @media screen and (max-width: 880px) {
     .menu__body {
+        padding-top: 30px;
         width: 500px;
     }
     .main__body_container {
@@ -223,6 +224,9 @@ a.conditions__style {
     .page__bullet {
         width: 10px;
         height: 10px;
+    }
+    .main__body_conditions {
+        bottom: 30px;
     }
 }
 @media screen and (max-width: 660px) {
