@@ -430,7 +430,7 @@ span.warning__inst_link a{
         display: none;
     }
 }
-@media screen and (max-width:300px) {
+@media screen and (max-width:600px) {
     .condition__container {
         width: 200px;
     }
