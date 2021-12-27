@@ -329,70 +329,149 @@ a.conditions__style {
 /*---------------------------*/
 .condition__container {
     width: 1040px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-    padding-top: 120px;
+    margin: 0 auto;
 }
-.condition__title {
-    margin-top: 40px;
-}
-.condition__subtitle {
-    margin-left: 50px;
-}
-.condition__point_body {
-    width: 760px;
-    margin-top: 25px;
+.condition__body {
     position: absolute;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
 }
-.condition__point {
-    margin-left: 50px;
-    margin-top: 25px;
-    position: relative;
+.condition__warning {
+    padding-top: 10px;
 }
-.condition__line {
-    width: 20px;
-    height: 500px;
-    background-color: #FFE600;
+.condition__body_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.condition__block {
+    width: 210px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    margin-right: 20px;
+}
+.condition-item {
+    width: 200px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .condition__title h2 {
     font-size: 64px;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
     color: #FFE600;
+    font-family: 'Roboto', sans-serif;
 }
 .condition__subtitle p {
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
-.condition__point p {
+.condition-item p {
     font-size: 14px;
     font-weight: 700;
+    color: black;
     font-family: 'Roboto', sans-serif;
-    color: white;
-    padding-left: 10px;
+    text-align: center;
 }
-.condition__point p::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: white;
-    display: block;
-    position: absolute;
-    top: 6px;
-    left: 0;
+.condition__warning p{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+span.warning__inst_link a{
+    text-decoration: underline;
+    color: #FFE600;
+}
+@media screen and (max-width:1100px) {
+    .condition__container {
+        width: 1000px;
+    }
+    .condition__body {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width:770px) {
+    .condition__container {
+        width: 300px;
+    }
+    .condition__title {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .condition__subtitle {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .condition__body_container {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .condition__body_items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .condition__block {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .condition__body_items:nth-child(2) {
+        display: none;
+    }
+}
+@media screen and (max-width:300px) {
+    .condition__container {
+        width: 200px;
+    }
+    .condition__title {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .condition__subtitle {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .condition__title h2 {
+        font-size: 36px;
+    }
+    .condition__subtitle p {
+        font-size: 14px;
+    }
+    .condition__body_container {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .condition__body_items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .condition__block {
+        margin-top: 5px;
+        margin-right: 0px;
+        width: 190px;
+        height: 100px;
+    }
+    .condition__body_items:nth-child(2) {
+        display: none;
+    }
+    .condition__warning p:nth-child(2) {
+        display: none;
+    }
 }
 /*----------------------------*/
 
